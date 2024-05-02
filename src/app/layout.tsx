@@ -29,6 +29,7 @@ export default function RootLayout({
       <meta property="twitter:title" content="AnimeClient - Anime Player" />
       <meta property="twitter:description" content="An application that brings together several anime streaming platforms vostfr/vf sub/dub" />
       <meta property="twitter:image" content="https://i.imgur.com/NGJwflq.png" />
+      <link rel="icon" href="./assets/logo.png" />
       <body className={`${inter.className} ctp-mocha`}>{children}</body>
     </html>
   );
