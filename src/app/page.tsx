@@ -1,7 +1,7 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import Navbar from "@/components/navbar";
-import Footer from "@/components/footer"
+import Footer from "@/components/footer";
 import Link from "next/link";
 import Image from 'next/image';
 
@@ -11,10 +11,31 @@ async function fetchLatestVersion() {
     return data.tag_name;
 }
 
+function getOS() {
+    const userAgent = window.navigator.userAgent;
+    if (userAgent.indexOf('Windows') !== -1) return 'Windows';
+    if (userAgent.indexOf('Macintosh') !== -1) return 'Mac';
+    if (userAgent.indexOf('Linux') !== -1) return 'Linux';
+    return 'Unknown';
+}
+
 async function download() {
     const latestVersion = await fetchLatestVersion();
     const versionWithoutV = latestVersion.replace('v', '');
-    const downloadUrl = `https://github.com/zvbt/AnimeClient/releases/download/${latestVersion}/AnimeClient-Setup-${versionWithoutV}.exe`;
+    let downloadUrl;
+
+    const os = getOS();
+    if (os === 'Windows') {
+        downloadUrl = `https://github.com/zvbt/AnimeClient/releases/download/${latestVersion}/AnimeClient-Setup-${versionWithoutV}.exe`;
+    } else if (os === 'Mac') {
+        downloadUrl = `https://github.com/zvbt/AnimeClient/tree/main?tab=readme-ov-file#for-mac-users-please-note-that-youll-need-to-compile-the-application-yourself-as-i-currently-lack-access-to-a-mac-for-testing-or-creating-an-installer`;
+    } else if (os === 'Linux') {
+        downloadUrl = `https://github.com/zvbt/AnimeClient/releases/download/${latestVersion}/AnimeClient-${versionWithoutV}.AppImage`;
+    } else {
+        alert('Unsupported OS');
+        return;
+    }
+
     const downloadButton = document.getElementById("downloadButton");
     if (downloadButton) {
         downloadButton.innerHTML = `
@@ -69,7 +90,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <Footer/>
+                <Footer />
             </div>
         </main>
     );
