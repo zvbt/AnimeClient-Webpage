@@ -68,12 +68,12 @@ export default function Home() {
                         <div className="flex justify-center">
                             <Link href={'https://anilist.co'}><Image src={"/assets/providers/anilist.png"} alt="" width={50} height={50} quality={100} /></Link>
                             <Link href={'https://animationdigitalnetwork.fr/'}><Image src={"/assets/providers/adn.png"} alt="" width={40} height={40} quality={100} /></Link>
-                            <Link href={'https://neko-sama.fr'}><Image src={"/assets/providers/nekosama.png"} alt="" width={50} height={50} quality={100} /></Link>
                             <Link href={'https://voiranime.com'}><Image src={"/assets/providers/voiranime.png"} alt="" width={50} height={50} quality={100} /></Link>
                             <Link href={'https://vostfree.ws'}><Image src={"/assets/providers/vostfree.png"} alt="" width={50} height={50} quality={100} /></Link>
+                            <Link href={'https://crunchyroll.com'}><Image src={"/assets/providers/crunchyroll.png"} alt="" width={50} height={50} quality={100} /></Link>
                         </div>
                         <div id="video" className="flex justify-center w-[600px] pt-10 rounded">
-                            <video src="/assets/video/preview.mp4" autoPlay loop muted></video>
+                            <video src="https://i.e-z.gg/ea3sg04j.mp4" autoPlay loop muted></video>
                         </div>
                         <div id="os" className="flex justify-center pt-5">
                             <div className="flex">
