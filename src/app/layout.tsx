@@ -21,12 +21,12 @@ export default function RootLayout({
       <meta name="og:description" content="An application that brings together several anime streaming platforms vostfr/vf sub/dub" />
       <meta name="Keywords" content="anime,player,anilist,list,crunchyroll,application,program,windows,mac,linux,cross-platform" />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://zvbt.github.io/AnimeClient/" />
+      <meta property="og:url" content="https://animeclient.zvbt.cc/" />
       <meta property="og:title" content="AnimeClient - Anime Player" />
       <meta property="og:description" content="An application that brings together several anime streaming platforms vostfr/vf sub/dub" />
       <meta property="og:image" content="https://i.imgur.com/NGJwflq.png" />
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://zvbt.github.io/AnimeClient/" />
+      <meta property="twitter:url" content="https://animeclient.zvbt.cc/" />
       <meta property="twitter:title" content="AnimeClient - Anime Player" />
       <meta property="twitter:description" content="An application that brings together several anime streaming platforms vostfr/vf sub/dub" />
       <meta property="twitter:image" content="https://i.imgur.com/NGJwflq.png" />
