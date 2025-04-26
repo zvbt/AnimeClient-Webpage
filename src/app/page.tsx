@@ -73,7 +73,7 @@ export default function Home() {
                             <Link href={'https://crunchyroll.com'}><Image src={"/assets/providers/crunchyroll.png"} alt="" width={50} height={50} quality={100} /></Link>
                         </div>
                         <div id="video" className="flex justify-center w-[600px] pt-10 rounded">
-                            <video src="https://i.e-z.gg/ea3sg04j.mp4" autoPlay loop muted></video>
+                            <video src="https://i.e-z.host/ea3sg04j.mp4" autoPlay loop muted></video>
                         </div>
                         <div id="os" className="flex justify-center pt-5">
                             <div className="flex">
